@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Comforter&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Caveat&family=Comforter&family=Roboto:ital,wght@1,100&display=swap"
+		rel="stylesheet">
+	<link rel="icon" href="image/favicon.ico" type="image/x-icon">
+	<title>Backla Sound</title>
+	<script>
+		let last = {};
+		document.querySelectorAll('audio').forEach(function (el) {
+			el.addEventListener('playing', function () {
+				if (last.pause && last !== this)
+					last.pause()
+				last = this
+			});
+		})
+	</script>
+</head>
+
+<style type="text/css">
+	/* Large Devices, Wide Screens */
+	@media all and (max-width : 1600px) {
+
+		.box__text {
+			color: red;
+		}
+
+
+		.plastcover {
+			height: 350px;
+			width: 350px;
+		}
+
+		.plast {
+			height: 350px;
+			width: 350px;
+			left: 275px;
+		}
+
+	}
+
+	/* Medium Devices, Desktops */
+	@media all and (max-width : 1200px) {
+
+		.box__text {
+			color: green;
+			font-size: 110px;
+		}
+
+		.scroll-bar {
+			width: 200px;
+
+			animation: scroll-bar1200 3s infinite ease-in-out;
+		}
+
+		.plastcover {
+			height: 300px;
+			width: 300px;
+		}
+
+		.plast {
+			height: 300px;
+			width: 300px;
+			left: 250px;
+		}
+
+	}
+
+	/* Small Devices, Tablets */
+	@media all and (max-width : 992px) {}
+
+	/* Extra Small Devices, Phones */
+	@media all and (max-width : 768px) {
+
+		.header__box {
+			height: 80%;
+			width: 80%;
+
+		}
+
+		.box__text {
+			font-size: 80px;
+		}
+
+		.header {
+			width: 768px;
+			height: 100vh;
+			max-height: 800px;
+			max-width: 768px;
+			min-height: 800px;
+			min-width: 768px;
+		}
+
+		.content {
+			width: 768px;
+			height: 300vh;
+			max-height: 1200px;
+			max-width: 768px;
+			min-height: 1200px;
+			min-width: 768px;
+		}
+
+		.plastcover {
+			height: 200px;
+			width: 200px;
+		}
+
+		.plast {
+			height: 200px;
+			width: 200px;
+			left: 200px;
+		}
+
+	}
+
+	/* Extra Small Devices, Phones */
+	@media all and (max-width : 480px) {}
+</style>
+
+<body>
+
+	<!-- <header class="header"> 
+
+			<div class="switch">
+				
+				<input type="checkbox" >
+				
+			</div> -->
+
+	<div class="header__box">
+
+		<div class="header__links">
+
+			<div class="header-info" id="vk"><a class="header__text" href="https://vk.com/guenko1">VK</a></div>
+
+			<div class="header-info" id="vk__group"><a class="header__text"
+					href="https://vk.com/backlasoundstudio">Group VK</a></div>
+
+			<div class="header-info" id="instagram"><a class="header__text" href="https://instagram.com/guenochka?igshid=YmMyMTA2M2Y=">Instagram</a>
+			</div>
+
+			<div class="header-info" id="whats"><a class="header__text" href="https://wa.me/79885733906">WhatsApp</a>
+			</div>
+
+		</div>
+
+		<h1 class="box__text">Backla Sound</h1>
+
+	</div>
+
+	<div class="scroll-bar"></div>
+
+	</header>
+
+	<div class="content">
+
+		<!--	<div class="nav">
+
+                <div class="nav-box" id="nav-box__about">
+                    <img src="../Бакласайт/image/about.png" width="115" height="115">
+                    <h1>Обо мне</h1>
+                    <p>информация обо мне</p>
+                </div>
+
+                <div class="nav-box" id="nav-box-portfolio">
+                    <img src="../Бакласайт/image/portfolio.png" width="115" height="115">
+                    <h1>Портфолио</h1>
+                    <p>примеры моих работ</p>
+                </div>
+
+                <div class="nav-box" id="nav-box-feedback" href="https://vk.com/app6326142_-197855175">
+                    <img src="../Бакласайт/image/feedback.png" width="115" height="115">
+                    <h1>Отзывы</h1>
+                    <p>Оценки моих работ</p>
+                </div>
+            </div> -->
+
+		<div class="content-aboutme">
+
+			<div class="content-aboutme-left">
+
+				<div class="content-aboutme-photo" id="photo1"></div>
+
+				<div class="content-aboutme-photo" id="photo2"></div>
+
+				<div class="content-aboutme-photo" id="photo3"></div>
+
+				<div class="content-aboutme-photo" id="photo4"></div>
+
+				<!--<div class="plastcover"></div>
+
+				<div class="plast"></div>-->
+
+			</div>
+
+			<div class="content-aboutme-right">
+
+				<h1>Обо мне</h1>
+				<br>
+				<h3> 	Меня зовут Артем, мой псевдоним Backla Sound, имею опыт в работе с музыкой более 4 лет.</h3>
+				<br>
+				<h1>Чем я могу помочь?</h1>
+				<br>
+				<h3>Сведение музыки</h3>
+				<br>
+				<h3>Создание музыкальных перебивок</h3>
+				<br>
+				<h3>Работа со звуком</h3>
+				<br>
+				<h3>Создание саунд дизайна</h3>
+				<br>
+				<h1>Некоторые из моих достижений</h1>
+				<br>
+				<h3>Сотрудничество с ФК "Сельмаш"</h3>
+				<br>
+				<h3>Сотрудничество с игровым проектом Amazing Role Play в качестве саунд дизайнера</h3>
+				<br>
+				<h1>Работал с:</h1>
+				<br>
+				<a href="https://vk.com/haebal_music" id="work__with">HAEBAL</a>
+				<br>
+				<a href="https://vk.com/malomood" id="work__with">MALOMOOD</a>
+				<br>
+				<a href="https://vk.com/jmpurple_official" id="work__with">Purple JM</a>
+				<br>
+				<a href="https://vk.com/khwoyagrade" id="work__with">khwoya</a>
+				<br>
+				<a href="https://vk.com/exodopevvs" id="work__with">EXODOPE</a>
+				<br>
+				<a href="https://vk.com/lilzeefromkdc" id="work__with">LIL ZEE BRA</a>
+				<br>
+			</div>
+
+		</div>
+
+	</div>
+
+	<!--<div class="content__musicbox">
+
+				<div class="content__musicbox-textup">
+					
+					<div class="musicbox-textup"> 
+
+						<h1 class="textup">
+							Пример работы
+						</h1>
+
+					</div>
+
+					<div class="musicbox-textdown"> 
+
+						<h1 class="textdown">
+							С другой стороны, укрепление и развитие внутренней структуры предопределяет высокую востребованность соответствующих условий активизации. А также реплицированные с зарубежных источников, современные исследования ограничены исключительно образом мышления. 
+						</h1>
+
+					</div>
+
+				</div>
+
+			</div>-->
+
+	<h1>Примеры моих работ</h1>
+
+	<div class="wrapper">
+
+		<input type="radio" name="point" id="slide1" checked>
+
+		<input type="radio" name="point" id="slide2">
+
+		<input type="radio" name="point" id="slide3">
+
+		<input type="radio" name="point" id="slide4">
+
+		<input type="radio" name="point" id="slide5">
+
+		<div class="slider">
+
+			<div class="slides slide1">
+
+				<div class="slides-left">
+
+					<div class="content-about-audio__block" id="audio1">
+
+						<h2 id="track__name">Backla Sound - [Пример] (1)</h2>
+
+						<audio controls>
+							<source src="Backla Sound - [Пример] (1).mp3">
+						</audio>
+
+					</div>
+
+					<div class="content-about-audio__block" id="audio2">
+
+						<h2 id="track__name">Backla Sound - [Пример] (2)</h2>
+
+						<audio controls>
+							<source src="Backla Sound - [Пример] (2).mp3">
+						</audio>
+
+					</div>
+
+
+
+					<div class="content-about-audio__block" id="audio3">
+						<h2 id="track__name">Backla Sound - [Пример] (3)</h2>
+						<audio controls>
+							<source src="Backla Sound - [Пример] (3).mp3">
+						</audio>
+					</div>
+				</div>
+
+				<div class="slides-right">
+					<div class="content-about-audio__block" id="audio1">
+						<h2 id="track__name">Backla Sound - [Пример] (4)</h2>
+						<audio controls>
+							<source src="Backla Sound - [Пример] (4).mp3">
+						</audio>
+					</div>
+					<div class="content-about-audio__block" id="audio2">
+						<h2 id="track__name">Backla Sound - [Пример] (5)</h2>
+						<audio controls>
+							<source src="Backla Sound - [Пример] (5).mp3">
+						</audio>
+					</div>
+
+					<div class="content-about-audio__block" id="audio3">
+						<h2 id="track__name">Backla Sound - [Пример] (6)</h2>
+						<audio controls>
+							<source src="Backla Sound - [Пример] (6).mp3">
+						</audio>
+					</div>
+				</div>
+			</div>
+			<div class="slides slide2">
+				<div class="slides-left">
+					<div class="content-about-audio__block" id="audio1">
+						<h2 id="track__name">Backla Sound - [Пример] (7)</h2>
+						<audio controls>
+							<source src="Backla Sound - [Пример] (7).mp3">
+						</audio>
+					</div>
+					<div class="content-about-audio__block" id="audio2">
+						<h2 id="track__name">Backla Sound - [Пример] (8)</h2>
+						<audio controls>
+							<source src="Backla Sound - [Пример] (8).mp3">
+						</audio>
+					</div>
+
+					<div class="content-about-audio__block" id="audio3">
+						<h2 id="track__name">Backla Sound - [Пример] (9)</h2>
+						<audio controls>
+							<source src="Backla Sound - [Пример] (9).mp3">
+						</audio>
+					</div>
+				</div>
+
+				<div class="slides-right">
+					<div class="content-about-audio__block" id="audio1">
+						<h2 id="track__name">Backla Sound - [Пример] (10)</h2>
+						<audio controls>
+							<source src="Backla Sound - [Пример] (10).mp3">
+						</audio>
+					</div>
+					<div class="content-about-audio__block" id="audio2">
+						<h2 id="track__name">Backla Sound - [Пример] (11)</h2>
+						<audio controls>
+							<source src="Backla Sound - [Пример] (11).mp3">
+						</audio>
+					</div>
+
+					<div class="content-about-audio__block" id="audio3">
+						<h2 id="track__name">Backla Sound - [Пример] (12)</h2>
+						<audio controls>
+							<source src="Backla Sound - [Пример] (12).mp3">
+						</audio>
+					</div>
+				</div>
+			</div>
+			<div class="slides slide3">
+				<div class="slides-left">
+					<div class="content-about-audio__block" id="audio1">
+						<h2 id="track__name">Backla Sound - [Пример] (13)</h2>
+						<audio controls>
+							<source src="Backla Sound - [Пример] (13).mp3">
+						</audio>
+					</div>
+					<div class="content-about-audio__block" id="audio2">
+						<h2 id="track__name">Backla Sound - [Пример] (14)</h2>
+						<audio controls>
+							<source src="Backla Sound - [Пример] (14).mp3">
+						</audio>
+					</div>
+
+					<div class="content-about-audio__block" id="audio3">
+						<h2 id="track__name">Backla Sound - [Пример] (15)</h2>
+						<audio controls>
+							<source src="Backla Sound - [Пример] (15).mp3">
+						</audio>
+					</div>
+				</div>
+
+				<div class="slides-right">
+					<div class="content-about-audio__block" id="audio1">
+						<h2 id="track__name">Backla Sound - [Пример] (16)</h2>
+						<audio controls>
+							<source src="Backla Sound - [Пример] (16).mp3">
+						</audio>
+					</div>
+					<div class="content-about-audio__block" id="audio2">
+						<h2 id="track__name">Backla Sound - [Пример] (17)</h2>
+						<audio controls>
+							<source src="Backla Sound - [Пример] (17).mp3">
+						</audio>
+					</div>
+
+					<div class="content-about-audio__block" id="audio3">
+						<h2 id="track__name">Backla Sound - [Пример] (18)</h2>
+						<audio controls>
+							<source src="Backla Sound - [Пример] (18).mp3">
+						</audio>
+					</div>
+				</div>
+			</div>
+			<div class="slides slide4">
+				<div class="slides-left">
+					<div class="content-about-audio__block" id="audio1">
+						<h2 id="track__name">Backla Sound - [Пример] (19)</h2>
+						<audio controls>
+							<source src="Backla Sound - [Пример] (19).mp3">
+						</audio>
+					</div>
+					<div class="content-about-audio__block" id="audio2">
+						<h2 id="track__name">Backla Sound - [Пример] (20)</h2>
+						<audio controls>
+							<source src="Backla Sound - [Пример] (20).mp3">
+						</audio>
+					</div>
+
+					<div class="content-about-audio__block" id="audio3">
+						<h2 id="track__name">Backla Sound - [Пример] (3)</h2>
+						<audio controls>
+							<source src="Backla Sound - [Пример] (3).mp3">
+						</audio>
+					</div>
+				</div>
+
+				<div class="slides-right">
+					<div class="content-about-audio__block" id="audio1">
+						<h2 id="track__name">Backla Sound - [Пример] (1)</h2>
+						<audio controls>
+							<source src="Backla Sound - [Пример] (1).mp3">
+						</audio>
+					</div>
+					<div class="content-about-audio__block" id="audio2">
+						<h2 id="track__name">Backla Sound - [Пример] (2)</h2>
+						<audio controls>
+							<source src="Backla Sound - [Пример] (2).mp3">
+						</audio>
+					</div>
+
+					<div class="content-about-audio__block" id="audio3">
+						<h2 id="track__name">Backla Sound - [Пример] (3)</h2>
+						<audio controls>
+							<source src="Backla Sound - [Пример] (3).mp3">
+						</audio>
+					</div>
+				</div>
+			</div>
+			<div class="slides slide5">
+				<div class="slides-left">
+					<div class="content-about-audio__block" id="audio1">
+						<h2 id="track__name">Backla Sound - [Пример] (1)</h2>
+						<audio controls>
+							<source src="Backla Sound - [Пример] (1).mp3">
+						</audio>
+					</div>
+					<div class="content-about-audio__block" id="audio2">
+						<h2 id="track__name">Backla Sound - [Пример] (2)</h2>
+						<audio controls>
+							<source src="Backla Sound - [Пример] (2).mp3">
+						</audio>
+					</div>
+
+					<div class="content-about-audio__block" id="audio3">
+						<h2 id="track__name">Backla Sound - [Пример] (3)</h2>
+						<audio controls>
+							<source src="Backla Sound - [Пример] (3).mp3">
+						</audio>
+					</div>
+				</div>
+
+				<div class="slides-right">
+					<div class="content-about-audio__block" id="audio1">
+						<h2 id="track__name">Backla Sound - [Пример] (1)</h2>
+						<audio controls>
+							<source src="Backla Sound - [Пример] (1).mp3">
+						</audio>
+					</div>
+					<div class="content-about-audio__block" id="audio2">
+						<h2 id="track__name">Backla Sound - [Пример] (2)</h2>
+						<audio controls>
+							<source src="Backla Sound - [Пример] (2).mp3">
+						</audio>
+					</div>
+
+					<div class="content-about-audio__block" id="audio3">
+						<h2 id="track__name">Backla Sound - [Пример] (3)</h2>
+						<audio controls>
+							<source src="Backla Sound - [Пример] (3).mp3">
+						</audio>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="controls">
+			<label for="slide1"></label>
+			<label for="slide2"></label>
+			<label for="slide3"></label>
+			<label for="slide4"></label>
+			<label for="slide5"></label>
+		</div>
+	</div>
+
+	<div class="footer">
+
+		<div class="footer-contact">
+			<h3 class="phone__number">+7 (988) 573 - 39 - 06</h3>
+			<h3 class="prod__text"><a class="footer__text" href="https://id.rambler.ru/account/profile?utm_source=mhead&utm_campaign=self_promo&utm_medium=topline&utm_content=id&back=https://www.rambler.ru/">artemguenko@rambler.ru</a>
+			</h3>
+		</div>
+
+		<div class="footer-copyright">
+			<h3>Copyright 2022 © Backla Sound</h3>
+		</div>
+
+		<div class="footer-prod">
+			<h3 class="prod__text">Produced by: <a class="footer__text" href="https://vk.com/nick_momot">momonteeenok</a> </h3>
+		</div>
+
+	</div>
+
+	</div>
+
+</body>
+
+</html>
